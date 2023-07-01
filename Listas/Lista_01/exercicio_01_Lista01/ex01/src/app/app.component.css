@@ -1,0 +1,20 @@
+.gestor-wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.gestor span {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.gestor {
+    width: 150px;
+    padding: auto;
+    background-color: antiquewhite;
+}
+
+.subordinados {
+    display: flex;
+    justify-content: center;
+    
+    
+}
