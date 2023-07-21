@@ -1,0 +1,17 @@
+.main {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.pokemons {
+    background-color: rgb(88, 88, 88);
+    padding: 7px 30px;
+    margin: 10px;
+    border: 2px solid aqua;
+    border-radius: 100%;
+    text-align: center;
+    color: aqua;
+    cursor: pointer;
+}
+
