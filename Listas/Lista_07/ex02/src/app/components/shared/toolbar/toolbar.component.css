@@ -1,0 +1,29 @@
+.mat-toolbar {
+    animation: animacao 5s linear infinite;
+}
+
+.links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.links a {
+    margin: 5px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Animações */
+
+@keyframes animacao {
+    100%{
+        filter: hue-rotate(350deg)
+    }
+}
