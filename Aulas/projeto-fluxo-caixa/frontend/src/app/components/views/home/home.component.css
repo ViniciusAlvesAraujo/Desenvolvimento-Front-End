@@ -1,0 +1,20 @@
+.buscar-por-data {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.buscar-por-data input, button {
+  height: 40px;
+  font-size: 25px;
+  margin: 10px;
+  width: 200px;
+}
+
+.buscar-por-data button {
+  border-radius: 10px;
+  background-color: rgb(62, 62, 218);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
