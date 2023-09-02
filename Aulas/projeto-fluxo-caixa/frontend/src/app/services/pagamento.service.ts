@@ -19,4 +19,7 @@ export class PagamentoService {
   public buscarPagamentosComSaldoConsolidado(dataReferencia: any): Observable<PagamentoSaldoConsolidado>{
     return this.http.get<PagamentoSaldoConsolidado>(`${this.baseUrl}/listar-saldo-consolidado?dataReferencia=${dataReferencia}`);
   }
+  public cadastrarPagamento(pagamento: Pagamento): Observable<any> {
+    return this.http.post<any>(`${this.baseUrl}/cadastrar-pagamento`, pagamento);
+  }
 }

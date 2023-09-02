@@ -18,12 +18,13 @@ export class HomeComponent implements OnInit{
       })
     }
     public pagamentos!: Pagamento[];
+    public pagamentosSaldoConsolidado!: PagamentoSaldoConsolidado;
     public colunas: string[] = ['descricao','valorPagamento','tipoPagamento','dataPagamento'];
     public dataReferencia!: Date
 
     public buscarPagamentoSaldoConsolidado() {
       this.pagamentoService.buscarPagamentosComSaldoConsolidado(this.dataReferencia).subscribe((response: PagamentoSaldoConsolidado) => {
-        console.log(response)
+        this.pagamentosSaldoConsolidado = response
       })
     }
 }

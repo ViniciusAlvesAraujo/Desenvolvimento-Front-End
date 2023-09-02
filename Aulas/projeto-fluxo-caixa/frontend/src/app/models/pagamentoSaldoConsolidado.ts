@@ -1,6 +1,6 @@
 import { Pagamento } from "./pagamento";
 
 export interface PagamentoSaldoConsolidado {
-  pagamento: Pagamento[];
+  pagamentos: Pagamento[];
   saldoConsolidadoDoDia: number;
 }

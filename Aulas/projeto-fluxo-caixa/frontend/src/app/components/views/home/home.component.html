@@ -5,7 +5,11 @@
   <button (click)="buscarPagamentoSaldoConsolidado()">Pesquisar</button>
 </div>
 
-<table mat-table [dataSource]="pagamentos" class="mat-elevation-z8">
+<div class="saldo-consolidado" *ngIf="pagamentosSaldoConsolidado">
+  <p>Saldo total do dia: {{ pagamentosSaldoConsolidado.saldoConsolidadoDoDia }}</p>
+</div>
+
+<table mat-table [dataSource]="pagamentosSaldoConsolidado != null? pagamentosSaldoConsolidado.pagamentos : pagamentos" class="mat-elevation-z8">
 
   <!-- Position Column -->
   <ng-container matColumnDef="descricao">
